@@ -30,7 +30,7 @@ h1 {
 }
 
 header img {
-    margin-top: 15px;
+    margin-right: 15px;
 }
 
 footer {
@@ -44,6 +44,10 @@ footer {
     text-align: center;
     background-color: #FFFFFF;
 }
+
+footer p {
+    margin: 0
+} /*This removes extra space at the bottom of the page */
 
 footer small {
     margin-top: 15px;
