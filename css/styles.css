@@ -201,10 +201,10 @@ width: 100%;
     padding-left: 0;
 }
 
-------------------------------------------------------------------
+/*-----------------------------------------------------------------
                 TABLET STYLES
-------------------------------------------------------------------
-@media only screen and (min-width: 768) {
+/*-----------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
    header {
         flex-flow: nowrap;
         justify-content: center;
@@ -221,13 +221,12 @@ width: 100%;
 
    .card {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: flex-start;
         margin: 30px 10px 3px 10px;
         overflow: auto;
         background-color: #FFFFFF;
-        height: 300px;
     }
 
     .recipe {
@@ -237,9 +236,11 @@ width: 100%;
         align-items: flex-start;
         background-color: #FFFFFF;
         box-sizing: border-box;
-        height: 550px;
         padding: 20px;
-        width: 50%;
+    }
+
+    .recipe p {
+        margin: 0 auto;
     }
 
     .card-bottom {
@@ -255,10 +256,10 @@ width: 100%;
         overflow: auto;
     }
 
-    ingredients {
+    .ingredients {
         line-height: 22px;
         list-style-type: square;
-        margin-right: 10px;
+        margin-right: 30px;
         padding-left: 0;
         width: 40%;
     }
@@ -266,7 +267,7 @@ width: 100%;
     .directions {
         line-height: 22px;
         padding-left: 0;
-        width: 240px;
+        width: 55%;
     }
 
 
