@@ -224,7 +224,7 @@ width: 100%;
         flex-flow: row wrap;
         justify-content: center;
         align-items: flex-start;
-        margin: 30px 10px 3px 10px;
+        margin: 40px 20px 3px 20px;
         overflow: auto;
         background-color: #FFFFFF;
     }
@@ -239,13 +239,9 @@ width: 100%;
         padding: 20px;
     }
 
-    .recipe p {
-        margin: 0 auto;
-    }
-
     .card-bottom {
         background-color: #FFFFFF;
-        margin: 10px 10px;
+        margin: 5px 20px;
     }
 
     .columns {
@@ -270,5 +266,67 @@ width: 100%;
         width: 55%;
     }
 
+/*-----------------------------------------------------------------
+                DESKTOP STYLES
+/*-----------------------------------------------------------------*/
+@media only screen and (min-width: 1200px) {
+    .card {
+        flex-flow: nowrap;
+        margin: 60px 60px 3px;
+    }
 
+    .card-bottom {
+        margin: 0px 60px 30px;
+    }
+
+    .image {
+        height: 315px;
+    }
+
+    .recipe {
+        flex-flow: row wrap;
+    }
+
+    .recipe h2 {
+        width: 100%;
+    }
+
+    .description {
+        width: 40%;
+        margin-top: 0px;
+    }
+
+    .time {
+        flex-flow: column nowrap;
+        margin-right: 15px;
+        border: none;
+        width: 45%;
+    }
+
+    .time div {
+        width: 90%;
+        padding-bottom: 6px;
+    }
+    
+    .time img {
+        padding-right: 10px;
+    }
+
+    .time .cook {
+        border-width: 1px;
+    }
+
+    .prep, .cook, .total {
+        border:1px solid #3B3B3B;
+        margin: 5px;
+    }
+
+    .ingredients {
+        margin-right: 15px;
+        width: 50%;
+    }
+
+    .directions {
+        width: 43%;
+    }
 }
